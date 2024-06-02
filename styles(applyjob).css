@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+    position: relative;
+}
+nav {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 25px gray;
+    border-bottom: 2px solid goldenrod;
+}
+nav h1 {
+    margin: 40px;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    padding-left: 0;
+    margin-top: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(145, 113, 81);
+}
+nav ul a {
+    font-size: 23px;
+}
+nav a:hover {
+    color: white;
+}
+
+
+
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(forcv.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 700px;
+}
+.main1 {
+    /* border: 2px red solid; */
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+.CV {
+    list-style-type: none;
+    color: white;
+}
+.name {
+    display: flex;
+}
+span {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    font-size: 11px;
+}
+.labbig {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 35px;
+}
+.labsmall {
+    margin-top: 15px;
+}
+.shithappened {
+    display: flex;
+}
+select {
+    margin-right: 15px;
+}
+.special {
+    text-align: center;
+}
+input[type="submit"] {
+    height: 30px;
+    width: 70px;
+    margin-top: 15px;
+}
+
+
+
+footer {
+    background-color: #333;
+    width: 100vw;
+    padding: 1px 0;
+    color: rgb(145, 113, 81);
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+    nav>h1 {
+        font-size: 30px !important;
+    }
+    nav>ul>li>a {
+        font-size: 15px !important;
+    }
+
+    .main1 {
+        width: 95%;
+        padding-left: 5px;
+    }
+    .CV {
+        width: 95%;
+        padding: 0;
+    }
+    .name {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

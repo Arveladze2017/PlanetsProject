@@ -1,0 +1,543 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+    height: 100%;
+    position: relative;
+}
+nav {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 25px gray;
+    border-bottom: 2px solid goldenrod;
+}
+nav h1 {
+    margin: 40px;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    padding-left: 0;
+    margin-top: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(145, 113, 81);
+}
+nav ul a {
+    font-size: 23px;
+}
+nav a:hover {
+    color: white;
+}
+
+
+
+
+.first  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    background-image: url(moonlanding.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+table {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    border-collapse: collapse;
+    width: 95%;
+}
+thead{
+    height: 60px;
+    border-bottom: 2px solid black;
+}
+td{
+    padding: 15px;
+}
+
+
+
+
+
+.second {
+    width: 100vw;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.second> div {
+    width: 45%;
+}
+.second h1 {
+    font-size: 60px;
+    text-decoration: underline;
+}
+.second2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.second2>i {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+
+
+
+
+.third {
+    border-top: 30px solid black;
+    width: 100vw;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.third> div {
+    width: 45%;
+}
+.third h1 {
+    font-size: 60px;
+    text-decoration: underline;
+}
+.third2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.third2>i {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+
+
+
+.fourth {
+    border-top: 30px solid black;
+    width: 100vw;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fourth> div {
+    width: 45%;
+}
+.fourth h1 {
+    font-size: 60px;
+    text-decoration: underline;
+}
+.fourth2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.fourth2>i {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+
+
+
+.fifth {
+    border-top: 30px solid black;
+    width: 100vw;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fifth> div {
+    width: 45%;
+}
+.fifth h1 {
+    font-size: 60px;
+    text-decoration: underline;
+}
+.fifth2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.fifth2>i {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.sixth {
+    border-top: 30px solid black;
+    width: 100vw;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sixth> div {
+    width: 45%;
+}
+.sixth h1 {
+    font-size: 60px;
+    text-decoration: underline;
+}
+.sixth2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sixth2>i {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+
+
+
+
+.scroll {
+    position: absolute;
+    left: 93%;
+    top: 20%;
+    width: 5%;
+    height: 77%;
+}
+.scroll a {
+    position: sticky;
+    top: 80%;
+    font-size: 55px;
+    color: blue;
+    /* z-index: 1; */
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    color: rgb(145, 113, 81);
+}
+footer i {
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .first {
+        height: 750px;
+    }
+    .second {
+        flex-direction: column;
+        text-align: center;
+        height: 920px;
+    }
+    .second>div {
+        width: 95%;
+    }
+    .second div h1 {
+        font-size: 40px;
+    }
+    .second img {
+        width: 260px;
+        height: 170px;
+    }
+
+
+
+
+
+    .third {
+        flex-direction: column;
+        text-align: center;
+        height: 920px;
+    }
+    .third>div {
+        width: 95%;
+    }
+    .third div h1 {
+        font-size: 40px;
+    }
+    .third img {
+        width: 260px;
+        height: 170px;
+    }
+
+
+
+    .fourth {
+        flex-direction: column;
+        text-align: center;
+        height: 920px;
+    }
+    .fourth>div {
+        width: 95%;
+    }
+    .fourth div h1 {
+        font-size: 40px;
+    }
+    .fourth img {
+        width: 260px;
+        height: 170px;
+    }
+
+
+
+
+    .fifth {
+        flex-direction: column;
+        text-align: center;
+        height: 920px;
+    }
+    .fifth>div {
+        width: 95%;
+    }
+    .fifth div h1 {
+        font-size: 40px;
+    }
+    .fifth img {
+        width: 260px;
+        height: 170px;
+    }
+
+
+
+
+    .sixth {
+        flex-direction: column;
+        text-align: center;
+        height: 920px;
+    }
+    .sixth>div {
+        width: 95%;
+    }
+    .sixth div h1 {
+        font-size: 40px;
+    }
+    .sixth img {
+        width: 260px;
+        height: 170px;
+    }
+
+    .scroll {
+        top: 22%;
+        left: 90%;
+    }
+
+    footer {
+        height: 230px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer h1 {
+        margin: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+
+    nav>h1 {
+        font-size: 30px !important;
+    }
+    nav>ul>li>a {
+        font-size: 15px !important;
+    }
+
+
+
+    .first{
+        height: 700px;
+    }
+    thead{
+        height: auto;
+        border-bottom: 2px solid black;
+    }
+    td{
+        padding: 5px;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+    iframe {
+        width: 320px;
+        height: 180px;
+    }
+    .second {
+        flex-direction: column;
+        text-align: center;
+        height: 1000px;
+    }
+    .second>div {
+        width: 95%;
+    }
+    .second div h1 {
+        font-size: 30px;
+    }
+    .second div p {
+        font-size: 13px;
+    }
+    .second img {
+        width: 260px;
+        height: 170px;
+    }
+
+
+
+
+
+    .third {
+        flex-direction: column;
+        text-align: center;
+        height: 1000px;
+    }
+    .third>div {
+        width: 95%;
+    }
+    .third div h1 {
+        font-size: 30px;
+    }
+    .third div p {
+        font-size: 13px;
+    }
+    .third img {
+        width: 260px;
+        height: 170px;
+    }
+
+
+
+    .fourth {
+        flex-direction: column;
+        text-align: center;
+        height: 920px;
+    }
+    .fourth>div {
+        width: 95%;
+    }
+    .fourth div h1 {
+        font-size: 30px;
+    }
+    .fourth div p {
+        font-size: 13px;
+    }
+    .fourth img {
+        width: 260px;
+        height: 170px;
+    }
+
+
+
+
+    .fifth {
+        flex-direction: column;
+        text-align: center;
+        height: 920px;
+    }
+    .fifth>div {
+        width: 95%;
+    }
+    .fifth div h1 {
+        font-size: 30px;
+    }
+    .fifth div p {
+        font-size: 13px;
+    }
+    .fifth img {
+        width: 260px;
+        height: 170px;
+    }
+
+
+
+
+    .sixth {
+        flex-direction: column;
+        text-align: center;
+        height: 920px;
+    }
+    .sixth>div {
+        width: 95%;
+    }
+    .sixth div h1 {
+        font-size: 30px;
+    }
+    .sixth div p {
+        font-size: 13px;
+    }
+    .sixth img {
+        width: 260px;
+        height: 170px;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    footer {
+        height: 230px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer h1 {
+        margin: 15px;
+    }
+}

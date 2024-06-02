@@ -1,0 +1,558 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+}
+nav {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 25px gray;
+    border-bottom: 2px solid goldenrod;
+}
+nav h1 {
+    margin: 40px;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    padding-left: 0;
+    margin-top: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(145, 113, 81);
+}
+nav ul a {
+    font-size: 23px;
+}
+nav a:hover {
+    color: white;
+}
+
+
+
+
+.first {
+    background-image: url(firstimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100vw;
+    height: 700px;
+}
+.container {
+    font-size: 6px;
+    width: 100em;
+    height: 100em;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+}
+.sun {
+    position: absolute;
+    top: 45em;
+    left: 45em;
+    width: 10em;
+    height: 10em;
+    background-color: rgb(255, 255, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+.earth,.moon, .mercury, .venus, .mars, .jupiter, .saturn, .neptune, .uranus {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+.mercury {
+    top: 42.5em;
+    left: 42.5em;
+    width: 15em;
+    height: 15em;
+    animation: orbit 1.5s linear infinite;
+}
+.venus {
+    top: 37.5em;
+    left: 37.5em;
+    width: 25em;
+    height: 25em;
+    animation: orbit 3.75s linear infinite;
+}
+.earth {
+    top: 32.5em;
+    left: 32.5em;
+    width: 35em;
+    height: 35em; 
+    animation: orbit 5s linear infinite;   
+}
+.mars {
+    top: 27.5em;
+    left: 27.5em;
+    width: 45em;
+    height: 45em;
+    animation: orbit 9s linear infinite;
+}
+.jupiter {
+    top: 22.5em;
+    left: 22.5em;
+    width: 55em;
+    height: 55em;
+    animation: orbit 30s linear infinite;
+}
+.saturn {
+    top: 15em;
+    left: 15em;
+    width: 70em;
+    height: 70em;
+    animation: orbit 60s linear infinite;
+}
+.uranus {
+    top: 10em;
+    left: 10em;
+    width: 80em;
+    height: 80em;
+    animation: orbit 100s linear infinite;
+}
+.neptune {
+    top: 5em;
+    left: 5em;
+    width: 90em;
+    height: 90em;
+    animation: orbit 130s linear infinite;
+}
+.moon {
+    top: 1em;
+    right: 1em;
+    width: 8em;
+    height: 8em; 
+    animation: orbit 2.7s linear infinite;
+}
+.earth::before,
+.moon::before,
+.mercury::before,
+.venus::before,
+.mars::before,
+.jupiter::before,
+.saturn::before,
+.uranus::before,
+.neptune::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 1em white;
+}
+.mercury::before {
+    top: 1.5em;
+    right: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: grey;
+}
+.venus::before {
+    top: 2em;
+    right: 2em;
+    width: 3em;
+    height: 3em;
+    background-color: goldenrod;
+}
+.earth::before {
+    top: 3.5em;
+    right: 3.5em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;    
+}
+.moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+.mars::before {
+    top: 5.25em;
+    right: 5.25em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: chocolate;
+}
+.jupiter::before {
+    top: 4em;
+    right: 4em;
+    width: 7em;
+    height: 7em;
+    background-color: #BD998A;
+}
+.saturn::before {
+    top: 7em;
+    right: 7em;
+    width: 6em;
+    height: 6em;
+    background-color: orange;
+}
+.uranus::before {
+    top: 9.5em;
+    right: 9.5em;
+    width: 4.5em;
+    height: 4.5em;
+    background-color: lightblue;
+}
+.neptune::before {
+    top: 11em;
+    right: 11em;
+    width: 4.5em;
+    height: 4.5em;
+    background-color: blue;
+}
+
+
+
+
+.fortext {
+    color: white;
+    position: absolute;
+    width: 32%;
+    left: 63%;
+    top: 5%;
+    text-align: center;
+}
+.fortext>h1 {
+    color: goldenrod;
+    font-size: 40px;
+}
+.fortext>p {
+    color: black;
+    margin-top: 25px;
+    font-size: 17px;
+    line-height: 23px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+}
+.fortext button {
+    width: 40%;
+    height: 35px;
+    margin-top: 25px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: blue;
+}
+.fortext button a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.fortext button:hover, .fortext button a:hover{
+    background-color: white;
+    color: blue;
+}
+
+
+
+
+
+
+
+
+.second {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    background-image: url(seconddiv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -16px;
+}
+.text2 {
+    text-align: center;
+    position: absolute;
+    width: 35%;
+    top: 15%;
+    left: 10%;
+}
+.text2>h1 {
+    margin: 0;
+}
+.text2 button {
+    width: 40%;
+    height: 30px;
+    margin-top: 30px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+.text2 button a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+.text2 button:hover, .text2 button a:hover{
+    background-color: blue;
+    color: white;
+}
+.text2-1 {
+    font-size: 20px;
+    position: absolute;
+    width: 25%;
+    top: 10%;
+    left: 65%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+}
+.text2-1>p {
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+
+
+
+
+.third {
+    position: relative;
+    top: -16px;
+    width: 100vw;
+    height: 600px;
+    background-image: url(third.jpg);
+    background-size: contain;
+}
+.third div {
+    color: white;
+    position: absolute;
+    width: 30%;
+    left: 63%;
+    top: 20%;
+    text-align: center;
+}
+.third div p {
+    font-size: 25px;
+    line-height: 25px;
+}
+.third button {
+    width: 40%;
+    height: 30px;
+    margin-top: 30px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+.third button a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+.third button:hover, .third button a:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    top: -16px;
+    background-color: black;
+    color: rgb(145, 113, 81);
+}
+footer i {
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 850px;
+        background-position: center;
+    }
+    .container {
+        font-size: 4.5px;
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    .fortext {
+        position: static;
+        width: 90%;
+    }
+    .fortext>p {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        color: black;
+        padding: 10px;
+    }
+
+
+    .second {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-position: center;
+    }
+    .text2 {
+        position: static;
+        width: 50%;
+    }
+    .text2-1 {
+        position: static;
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+    }
+    .text2-1>p {
+        color: black;
+        margin: 20px;
+    }
+
+
+
+    .third {
+        top: 0;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    .third>div {
+        position: static;
+        width: 90%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    li>a {
+        font-size: 15px !important;
+    }
+    p {
+        font-size: 15px !important;
+    }
+
+
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 950px;
+    }
+    .container {
+        position: relative;
+        top: auto;
+        left: auto;
+        font-size: 3px
+    }
+    .fortext {
+        position: static;
+        width: 90%;
+    }
+    .fortext>p {
+        margin-top: 20px;
+    }
+    .fortext>button {
+        margin-top: 20px;
+    }
+
+
+
+
+
+    .second {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-position: center;
+    }
+    .text2 {
+        position: static;
+        width: 90%;
+    }
+    .text2-1 {
+        position: static;
+        width: 85%;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+    }
+    .text2-1>p {
+        color: black;
+        margin: 20px;
+    }
+
+
+
+
+    .third {
+        top: 0;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    .third>div {
+        position: static;
+        width: 90%;
+    }
+
+
+
+
+    footer {
+        height: 150px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
